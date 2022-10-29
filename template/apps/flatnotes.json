@@ -3,7 +3,7 @@
 		"Other",
 		"Tools"
 	],
-	"description": "A distraction-free, database-less note taking app that puts your note content first.",
+	"description": "A distraction-free, database-less note taking app that puts your content first.",
 	"env": [
 		{
 			"default": "password",
@@ -16,7 +16,7 @@
 			"name": "FLATNOTES_USERNAME"
 		},
 		{
-			"default": "password",
+			"default": "changeme",
 			"label": "FLATNOTES_PASSWORD",
 			"name": "FLATNOTES_PASSWORD"
 		},
@@ -32,6 +32,7 @@
 	"name": "flatnotes",
 	"officialDoc": "https://hub.docker.com/r/dullage/flatnotes",
 	"platform": "linux",
+	"preInstallScript": "install_flatnotes.sh",
 	"ports": [
 		"8715:80/tcp"
 	],
