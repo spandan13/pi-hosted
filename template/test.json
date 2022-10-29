@@ -29,11 +29,9 @@
 					"name": "FLATNOTES_SECRET_KEY"
 				}
 			],
-			"image_arm64": "dullage/flatnotes:latest",
-			"image_amd64": "dullage/flatnotes:latest",
+			"image": "dullage/flatnotes:latest",
 			"logo": "https://raw.githubusercontent.com/spandan13/pi-hosted/master/images/flatnotes.png",
 			"name": "flatnotes",
-			"officialDoc": "https://hub.docker.com/r/dullage/flatnotes",
 			"platform": "linux",
 			"ports": [
 				"8715:80/tcp"
@@ -42,12 +40,12 @@
 			"title": "flatnotes",
 			"type": 1,
 				"volumes": [
-						{
-								"bind": "/portainer/Files/AppData/Config/flatnotes/data",
-								"container": "/app/data"
-						}
+					{
+                        "bind": "/portainer/Files/AppData/Config/flatnotes/data",
+                        "container": "/app/data"
+					}
 			],
-			"webpage": "https://github.com/Dullage/flatnotes"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Dullage/flatnotes\" target=\"_blank\">https://github.com/Dullage/flatnotes</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/dullage/flatnotes\" target=\"_blank\">https://hub.docker.com/r/dullage/flatnotes</a><br><br><br>"
 		},
         {
             "categories": [
